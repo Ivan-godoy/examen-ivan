@@ -22,7 +22,7 @@
             <option value="GBP">GBP - Libra Esterlina</option>
         </select><br>
         <label >Valor final</label><br>
-        <p>{{intercambio*valor}}</p>
+        <p>{{monedaNueva}} {{intercambio*valor}}</p>
     </div>
 </template>
 
@@ -57,6 +57,12 @@
 
 <style scoped>
     select{
-        margin: 90px;
+        height: 50px;
+        margin: 60px;
+        width: 60%;
+    }
+    input{
+        height: 30px;
+        width: 80%;
     }
 </style>
